@@ -564,4 +564,4 @@ voiceChannel.join()
 
 })
 
-Client.login()
+Client.login(process.env.TOKEN)
