@@ -97,7 +97,7 @@ Client.on('message', (message)=>{
     if(message.content.startsWith(prefix + "bugreport")){
       let args = message.content.slice(prefix.length).trim().split(' ');
       let reason = args.slice(1).join(' ');
-    const reporta = new Discord.WebhookClient('506262865167253540', 'PuQWXiIjXG5j-aOdFcjY1Xeo-2eBjmzzY5KIYvSErcN4JKvkz3NbNqz3n2M2TKM8XaLd');
+    const reporta = new Discord.WebhookClient(process.env.ID, process.env.BTOKEN);
     
     // Send a message using the webhook
     const reportaembed = new Discord.RichEmbed()
